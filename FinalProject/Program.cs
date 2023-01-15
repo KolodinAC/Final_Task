@@ -3,14 +3,15 @@
 // либо задать на старте выполнения алгоритма. 
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами.
 
-
+Console.WriteLine();
 string[] workArray = FillArray();
 string[] resultArray = GenerateNewArray(workArray);
 string originalArray = PrintArray(workArray);
 string sortedArray = PrintArray(resultArray);
 
+Console.WriteLine();
 Console.WriteLine("Ваш массив " + originalArray + " отсортирован: " + sortedArray);
-
+Console.WriteLine();
 
 
 
@@ -20,7 +21,7 @@ Console.WriteLine("Ваш массив " + originalArray + " отсортиро�
 string[] FillArray()
 {
     Console.WriteLine("Введите желаемые элементы массива через пробел, затем нажмите Enter: ");
-
+    Console.WriteLine();
     string? enterSymbols = Console.ReadLine();
 
     if (enterSymbols == null) 
